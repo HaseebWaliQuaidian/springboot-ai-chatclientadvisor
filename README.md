@@ -31,17 +31,17 @@ The AI is able to **remember conversation context** across messages without manu
 ---
 
 ## 🧩 Architecture Overview
-Client
-|
-| POST /remember/message
-v
-RememberChatController
-|
-v
-ChatClient
-├── MessageChatMemoryAdvisor (20 messages)
-├── SimpleLoggerAdvisor
-├── SafeguardAdvisor
-|
-v
-OpenAI Chat Model
+Client  
+|  
+| POST /remember/message  
+v  
+RememberChatController  
+|  
+v  
+ChatClient  
+├── MessageChatMemoryAdvisor (20 messages)  
+├── SimpleLoggerAdvisor  
+├── SafeguardAdvisor  
+|  
+v  
+OpenAI Chat Model  
